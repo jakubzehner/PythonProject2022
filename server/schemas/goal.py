@@ -2,9 +2,6 @@ from pydantic import BaseModel
 from server.enums import Color, Icon
 from datetime import date
 
-# Modele pydatnic dotyczące "celów", umożliwiają łatwe zarządzanie danymi, walidacje danych, a także automatyczne
-# generowanie wymaganego body w formacie json do zapytań, oraz odpowiedzi z serwera również w formacie json
-
 
 class GoalBase(BaseModel):
     name: str

@@ -21,7 +21,6 @@ def update_label_with_amount(label, text, amount, rely):
     label.place(relx=0, rely=rely, anchor=tk.W)
 
 
-# Klasa zawierająca widok zakładki "Wpisy"
 class Entry:
     def __init__(self, parent, controller, app):
         self.app = app

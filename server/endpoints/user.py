@@ -8,11 +8,6 @@ from server import schemas
 from server.database import crud
 from server.database.get_db import get_db
 
-# Endpoint służący do obsługi wszystkich zapytań związanych z "użytkownikami", umożliwia uzyskanie tokenu, czyli
-# "zalogowanie się" użytkownika, obsługuje wszystkie wymagane rodzaje zapytań, tj. zwraca listę użytkowników,
-# zwraca szczegóły dotyczące konkretnego użytkownika, umożliwia edycję użytkownika na różne sposoby,
-# usuwanie użytkownika
-
 router = APIRouter(prefix='/users', tags=['User'], responses={404: {'description': 'Not found'}})
 
 

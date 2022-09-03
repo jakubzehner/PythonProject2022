@@ -11,8 +11,6 @@ def create_label(master, text, relx, rely, anchor=tk.W, font=SMALL_FONT, width=0
     return label
 
 
-# Klasa zawierająca widok zakładki "Ustawienia"
-
 class Settings:
     def __init__(self, parent, controller, app):
         self.parent = parent

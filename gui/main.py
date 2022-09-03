@@ -12,7 +12,6 @@ ctk.set_default_color_theme(cfg['color_theme'])
 ctk.deactivate_automatic_dpi_awareness()
 
 
-# Okno aplikacji
 class Gui(ctk.CTk):
 
     def __init__(self, app=None, *args, **kwargs):

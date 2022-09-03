@@ -7,8 +7,6 @@ from server.database.database import Base
 from server.enums import Category
 
 
-# klasa służąca do opisu tabeli w bazie danych, ponieważ projekt wykorzystuje ORM, konretnie sqlalchemy
-
 class Entry(Base):
     __tablename__ = 'entries'
 

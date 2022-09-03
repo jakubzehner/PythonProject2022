@@ -18,7 +18,6 @@ def create_menu_button(master, text, command, image, column):
     return frame, button
 
 
-# Klasa zawierająca widok części użytkowej aplikacji
 class App(ctk.CTkFrame):
     def __init__(self, parent, controller, app):
         ctk.CTkFrame.__init__(self, parent, width=parent.winfo_width(), height=parent.winfo_height(),

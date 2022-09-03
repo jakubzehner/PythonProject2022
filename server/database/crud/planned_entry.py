@@ -3,8 +3,6 @@ from server.database.models.planned_entry import PlannedEntry as modelPlannedEnt
 from server.schemas.planned_entry import PlannedEntryCreate as schemaPlannedEntryCreate
 
 
-# Operacje na bazie danych dotyczące "planowanych wpisów"
-
 def get_planned_entry(db: Session, planned_entry_id: int, user_id: int):
     return db.query(modelPlannedEntry).filter(modelPlannedEntry.id == planned_entry_id,
                                               modelPlannedEntry.user_id == user_id).first()

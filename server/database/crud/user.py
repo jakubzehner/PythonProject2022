@@ -4,8 +4,6 @@ from server.schemas.user import UserCreate as schemaUserCreate
 from server.schemas.user import User as schemaUser
 
 
-# Operacje na bazie danych dotyczące "użytkowników"
-
 def get_user(db: Session, user_id: int):
     return db.query(modelUser).filter(modelUser.id == user_id).first()
 

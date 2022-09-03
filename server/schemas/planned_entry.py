@@ -3,10 +3,6 @@ from server.enums import Category, Period
 from datetime import date
 
 
-# Modele pydatnic dotyczące "planowanych wpisów", umożliwiają łatwe zarządzanie danymi, walidacje danych, a także
-# automatyczne generowanie wymaganego body w formacie json do zapytań, oraz odpowiedzi z serwera również w formacie json
-
-
 class PlannedEntryBase(BaseModel):
     category: Category
     name: str | None = None

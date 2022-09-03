@@ -5,8 +5,6 @@ from parser import PATH, cfg
 from enums import *
 
 
-# Zbiór funkcji mający na celu wyeliminować powtarzanie kodu w GUI
-
 def create_popup(x, y, title, on_closing, parent=None):
     popup = ctk.CTkToplevel(master=parent)
     popup.geometry(f'{x}x{y}+{int(cfg["app_pos_x"]) + (900 - x) // 2}+{int(cfg["app_pos_y"]) + (600 - y) // 2}')

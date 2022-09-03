@@ -6,10 +6,6 @@ from server import schemas
 from server.database import crud
 from server.database.get_db import get_db
 
-# Endpoint służący do obsługi wszystkich zapytań związanych z "celami", obsługuje wszystkie wymagane rodzaje zapytań,
-# tj. zwraca listę celów uwierzytelnionego użytkownika, zwraca szczegóły dotyczące konkretnego celu użytkownika,
-# umożliwia edycję celu, usuwanie celu
-
 router = APIRouter(prefix='/goals', tags=['Goal'], responses={404: {'description': 'Not found'}})
 
 

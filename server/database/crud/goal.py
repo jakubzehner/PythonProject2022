@@ -3,8 +3,6 @@ from server.database.models.goal import Goal as modelGoal
 from server.schemas.goal import GoalCreate as schemaGoalCreate
 
 
-# Operacje na bazie danych dotyczące "celów"
-
 def create_goal(db: Session, goal: schemaGoalCreate, user_id: int):
     db_goal = modelGoal(**goal.dict(), user_id=user_id)
     db.add(db_goal)

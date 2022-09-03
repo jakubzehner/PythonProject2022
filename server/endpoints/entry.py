@@ -8,10 +8,6 @@ from server.database.get_db import get_db
 
 from .user import change_current_user_balance
 
-# Endpoint służący do obsługi wszystkich zapytań związanych z "wpisami", obsługuje wszystkie wymagane rodzaje zapytań,
-# tj. zwraca listę wpisów uwierzytelnionego użytkownika, zwraca szczegóły dotyczące konkretnego wpisu użytkownika,
-# umożliwia edycję wpisu, usuwanie wpisu
-
 router = APIRouter(prefix='/entries', tags=['Entry'], responses={404: {'description': 'Not found'}})
 
 

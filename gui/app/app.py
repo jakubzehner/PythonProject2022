@@ -10,8 +10,6 @@ API_P_ENTRIES = 'p_entries/'
 API_GOALS = 'goals/'
 
 
-# Klasa odpowiadająca za logikę aplikacji łączenia się z REST API
-
 class App:
     token: str | None = None
     token_type: str | None = None

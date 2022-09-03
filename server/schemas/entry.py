@@ -3,9 +3,6 @@ from server.enums import Category
 from datetime import date
 
 
-# Modele pydatnic dotyczące "wpisów", umożliwiają łatwe zarządzanie danymi, walidacje danych, a także automatyczne
-# generowanie wymaganego body w formacie json do zapytań, oraz odpowiedzi z serwera również w formacie json
-
 class EntrySimplified(BaseModel):
     id: int
     category: Category

@@ -9,7 +9,6 @@ from matplotlib.backends.backend_tkagg import FigureCanvasTkAgg
 from constants import *
 
 
-# Klasa zawierająca widok zakładki "Strona główna"
 class Home:
     def __init__(self, parent, controller, app):
         self.controller = controller

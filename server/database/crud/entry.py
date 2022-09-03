@@ -3,8 +3,6 @@ from server.database.models.entry import Entry as modelEntry
 from server.schemas.entry import EntryCreate as schemaEntryCreate
 
 
-# Operacje na bazie danych dotyczące "wpisów"
-
 def get_entries(db: Session, user_id: int, skip: int = 0, limit: int = 100):
     return db.query(modelEntry).filter(modelEntry.user_id == user_id) \
         .order_by(modelEntry.date.desc(), modelEntry.id.desc()).offset(skip).limit(limit).all()

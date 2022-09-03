@@ -4,8 +4,6 @@ from sqlalchemy.orm import relationship
 from server.database.database import Base
 
 
-# klasa służąca do opisu tabeli w bazie danych, ponieważ projekt wykorzystuje ORM, konretnie sqlalchemy
-
 class User(Base):
     __tablename__ = 'users'
 

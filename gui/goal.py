@@ -7,7 +7,6 @@ from util import load_image, create_popup, color_values, color_names, icons_path
     icons_names, removing_popup, watching_popup
 
 
-# Klasa zawierająca widok zakładki "Cele"
 class Goal:
     def __init__(self, parent, controller, app):
 

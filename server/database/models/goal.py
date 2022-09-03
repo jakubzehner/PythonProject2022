@@ -6,7 +6,6 @@ from sqlalchemy.orm import relationship
 from server.database.database import Base
 from server.enums import Color, Icon
 
-# klasa służąca do opisu tabeli w bazie danych, ponieważ projekt wykorzystuje ORM, konretnie sqlalchemy
 
 class Goal(Base):
     __tablename__ = 'goals'

@@ -6,10 +6,6 @@ from server import schemas
 from server.database import crud
 from server.database.get_db import get_db
 
-# Endpoint służący do obsługi wszystkich zapytań związanych z "planowanymi wpisami", obsługuje wszystkie wymagane
-# rodzaje zapytań, tj. zwraca listę planowanych wpisów użytkowników uwierzytelnionego użytkownika, zwraca szczegóły
-# dotyczące konkretnego planowanego wpisu użytkownika, umożliwia edycję planowanego wpisu, usuwanie planowanego wpisu
-
 router = APIRouter(prefix='/p_entries', tags=['Planned Entry'], responses={404: {'description': 'Not found'}})
 
 

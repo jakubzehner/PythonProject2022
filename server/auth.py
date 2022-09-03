@@ -9,9 +9,6 @@ from sqlalchemy.orm import Session
 from .database.get_db import get_db
 from .database import crud
 
-# Kod służący do uwierzytelniania użytkownika, w tym celu został wykorzystany JWT i OAuth2
-# Aby korzystać w przyjemny sposób z przesyłania tokenu uwierzytelniającego użytkownika w nagłówku zapytania
-
 SECRET_KEY = '4f056e2ac2fcb0e0c8697b88110f4737'
 ALGORITHM = 'HS256'
 ACCESS_TOKEN_EXPIRE_MINUTES = 360

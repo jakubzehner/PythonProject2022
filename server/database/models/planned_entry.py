@@ -6,7 +6,6 @@ from sqlalchemy.orm import relationship
 from server.database.database import Base
 from server.enums import Category, Period
 
-# klasa służąca do opisu tabeli w bazie danych, ponieważ projekt wykorzystuje ORM, konretnie sqlalchemy
 
 class PlannedEntry(Base):
     __tablename__ = 'planned_entries'

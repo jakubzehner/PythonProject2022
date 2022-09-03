@@ -1,9 +1,6 @@
 from enum import Enum
 
 
-# Plik zawierający enumy, identyczny jest w aplikacji klienckiej, dla zachowania kompatybilności i zachowania kontekstu,
-# zamiast używania magicznych numerków, które nie wiadomo co oznaczają
-
 class Color(Enum):
     """
     An enumeration.

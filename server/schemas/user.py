@@ -1,9 +1,6 @@
 from pydantic import BaseModel
 
 
-# Modele pydatnic dotyczące "użytkowników", umożliwiają łatwe zarządzanie danymi, walidacje danych, a także
-# automatyczne generowanie wymaganego body w formacie json do zapytań, oraz odpowiedzi z serwera również w formacie json
-
 class UserChangePassword(BaseModel):
     old_password: str
     new_password: str

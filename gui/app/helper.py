@@ -2,8 +2,6 @@ from matplotlib.ticker import MaxNLocator
 from matplotlib.figure import Figure
 
 
-# Zbiór funkcji wspomagający obsługę danych, w tym m.in. tworzenie wykresów
-
 def get_outcome(json_list):
     outcome = 0
     for elem in json_list:

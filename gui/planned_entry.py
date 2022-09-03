@@ -6,8 +6,6 @@ from util import removing_popup, create_popup, category_names, periodicity_names
     watching_popup
 
 
-# Klasa zawierająca widok zakładki "Planowane wpisy"
-
 class PlannedEntry:
     def __init__(self, parent, controller, app):
         self.controller = controller
