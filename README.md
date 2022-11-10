@@ -1,2 +1,2 @@
 # PythonProject2022
-Projekt aplikacji finansowej z REST API na języki skryptowe 2022
+Simple financial application project with REST API for scripting languages class
